@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Magcwenza Beauty Bar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .video-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+      object-fit: cover;
+    }
+
+    .overlay {
+      position: relative;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .slider {
+      display: flex;
+      overflow-x: auto;
+      gap: 1rem;
+      padding: 1rem;
+      scroll-snap-type: x mandatory;
+    }
+
+    .slider img {
+      height: 300px;
+      border-radius: 20px;
+      scroll-snap-align: center;
+    }
+
+    .section {
+      padding: 2rem;
+      background-color: rgba(0,0,0,0.6);
+      color: white;
+      text-align: center;
+    }
+
+    .contacts i {
+      margin-right: 10px;
+    }
+
+    .book-now {
+      margin-top: 1rem;
+    }
+
+    .book-now a {
+      padding: 0.75rem 1.5rem;
+      background-color: gold;
+      color: black;
+      font-weight: bold;
+      border-radius: 25px;
+      text-decoration: none;
+    }
+
+    .prices {
+      margin-top: 2rem;
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+  <video autoplay muted loop class="video-bg">
+    <source src="videos/your video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="overlay">
+    <h1>Magcwenza Beauty Bar</h1>
+    <p>Experience Luxury Hair Installations</p>
+  </div>
+
+  <div class="slider">
+    <img src="images/hair1.jpg" alt="Hair Style 1">
+    <img src="images/hair2.jpg" alt="Hair Style 2">
+    <img src="images/hair3.jpg" alt="Hair Style 3">
+    <img src="images/hair4.jpg" alt="Hair Style 4">
+    <img src="images/hair5.jpg" alt="Hair Style 5">
+    <!-- Add more images as needed -->
+  </div>
+
+  <div class="section">
+    <h2>Hair Installation Prices</h2>
+    <div class="prices">
+      <p>Basic = R100.00</p>
+      <p>Style = R150.00</p>
+    </div>
+
+    <div class="book-now">
+      <a href="book.html">Book Now</a>
+    </div>
+  </div>
+
+  <div class="section contacts">
+    <h2>Contact Us</h2>
+    <p><i class="fas fa-phone"></i>+27 74 059 0912</p>
+    <p><i class="fab fa-facebook"></i>Akhona Magcwensa</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Installation - Magcwenza Beauty Bar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f5f5f5;
+      padding: 2rem;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+
+    input, select, button {
+      width: 100%;
+      padding: 0.75rem;
+      margin-top: 0.5rem;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background-color: gold;
+      font-weight: bold;
+      cursor: pointer;
+      border: none;
+    }
+
+    .note {
+      margin-top: 2rem;
+      background-color: #fffbe6;
+      padding: 1rem;
+      border-left: 5px solid gold;
+      border-radius: 10px;
+    }
+
+    .whatsapp {
+      display: block;
+      text-align: center;
+      margin-top: 1rem;
+      text-decoration: none;
+      color: white;
+      background-color: #25D366;
+      padding: 0.75rem;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Book Your Installation</h1>
+    <form>
+      <label for="service">Choose Your Service</label>
+      <select id="service" name="service" required>
+        <option value="">-- Select --</option>
+        <option value="basic">Basic (R100.00)</option>
+        <option value="style">Style (R150.00)</option>
+      </select>
+
+      <label for="date">Preferred Date</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="location">Location</label>
+      <select id="location" name="location" required>
+        <option value="">-- Select --</option>
+        <option value="client">Your Place</option>
+        <option value="magcwenza">Magcwenza's Place</option>
+      </select>
+
+      <button type="submit">Submit Booking</button>
+    </form>
+
+    <div class="note">
+      <p>If you would like Magcwenza to come do the installation at your place, kindly add <strong>R70.00</strong> to your service total.</p>
+      <p>Or you can book directly on WhatsApp:</p>
+      <a class="whatsapp" href="https://wa.me/27740590912" target="_blank">Book on WhatsApp</a>
+    </div>
+  </div>
+</body>
+</html>
